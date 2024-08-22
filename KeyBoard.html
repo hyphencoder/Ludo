@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Keyboard</title>
+  <style>
+    
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+.container{
+  height: 420;
+  width: 1600px;
+  background-color: gray;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.keyboard, .arr, .num {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 18px;
+  color: gray;
+  font-weight: 400;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#o{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 0px solid #333;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: gray;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+#s{
+  width: 280px;
+}
+#t{
+  width: 80px;
+}
+#b{
+  width: 82px;
+}
+
+#S{
+  width: 120px;
+}
+#c{
+  width: 90px;
+}
+#p{
+  width: 110px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="keyboard">
+     <div class="row">
+      <div class="key" id="t">Esc</div>
+      <div class="key">F1</div>
+      <div class="key">F2</div>
+      <div class="key">F3</div>
+      <div class="key">F4</div>
+      <div class="key">F5</div>
+      <div class="key">F6</div>
+      <div class="key">F7</div>
+      <div class="key">F8</div>
+      <div class="key">F9</div>
+      <div class="key">F10</div>
+      <div class="key">F11</div>
+      <div class="key">F12</div>
+      <div class="key"></div>
+    </div>
+    <div class="row">
+      <div class="key">~</div>
+      <div class="key">1</div>
+      <div class="key">2</div>
+      <div class="key">3</div>
+      <div class="key">4</div>
+      <div class="key">5</div>
+      <div class="key">6</div>
+      <div class="key">7</div>
+      <div class="key">8</div>
+      <div class="key">9</div>
+      <div class="key">0</div>
+      <div class="key">- _</div>
+      <div class="key">= +</div>
+      <div class="key" id="t">Back</div>
+    </div>
+    <div class="row">
+      <div class="key" id="t">Tab</div>
+      <div class="key">Q</div>
+      <div class="key">W</div>
+      <div class="key">E</div>
+      <div class="key">R</div>
+      <div class="key">T</div>
+      <div class="key">Y</div>
+      <div class="key">U</div>
+      <div class="key">I</div>
+      <div class="key">O</div>
+      <div class="key">P</div>
+      <div class="key">{</div>
+      <div class="key">}</div>
+      <div class="key">|\</div>
+    </div>
+    <div class="row">
+      <div class="key" id="c">CapsLock</div>
+      <div class="key">A</div>
+      <div class="key">S</div>
+      <div class="key">D</div>
+      <div class="key">F</div>
+      <div class="key">G</div>
+      <div class="key">H</div>
+      <div class="key">J</div>
+      <div class="key">K</div>
+      <div class="key">L</div>
+      <div class="key">:;</div>
+      <div class="key">"'</div>
+      <div class="key" id="c">return</div>
+    </div>
+    <div class="row">
+      <div class="key" id="S">Shift</div>
+      <div class="key">Z</div>
+      <div class="key">X</div>
+      <div class="key">C</div>
+      <div class="key">V</div>
+      <div class="key">B</div>
+      <div class="key">N</div>
+      <div class="key">M</div>
+      <div class="key"><,</div>
+      <div class="key">>.</div>
+      <div class="key">?/</div>
+      <div class="key" id="S">Shift</div>
+     </div>
+     <div class="row">
+      <div class="key" id="b">Control</div>
+      <div class="key" id="b">Option</div>
+      <div class="key" id="b">Command</div>
+      <div class="key" id="s">SPACE BAR</div>
+      <div class="key" id="b">Command</div>
+      <div class="key" id="b">Option</div>
+      <div class="key" id="b">Control</div>
+     </div>
+  </div>
+  <div class="arr">
+    <div class="row">
+      <div class="key">F13</div>
+      <div class="key">F14</div>
+      <div class="key">F15</div>
+    </div>
+    <div class="row">
+      <div class="key">Fn</div>
+      <div class="key">Home</div>
+      <div class="key">Up</div>
+    </div>
+    <div class="row">
+      <div class="key">Delete</div>
+      <div class="key">End</div>
+      <div class="key">Down</div>
+    </div>
+    <div class="row">
+      <div class="key" id="o"></div>
+      <div class="key" id="o"></div>
+      <div class="key" id="o"></div>
+    </div>
+    <div class="row">
+      <div class="key" id="o"></div>
+      <div class="key">&uarr;</div>
+      <div class="key" id="o"></div>
+    </div>
+    <div class="row">
+      <div class="key">&larr;</div>
+      <div class="key">&darr;</div>
+      <div class="key">&rarr;</div>
+    </div>
+  </div>
+  <div class="num">
+    <div class="row">
+      <div class="key">F16</div>
+      <div class="key">F17</div>
+      <div class="key">F18</div>
+      <div class="key">F19</div>
+    </div>
+     <div class="row">
+      <div class="key">AC</div>
+      <div class="key">=</div>
+      <div class="key">/</div>
+      <div class="key">*</div>
+    </div>
+     <div class="row">
+      <div class="key">7</div>
+      <div class="key">8</div>
+      <div class="key">9</div>
+      <div class="key">-</div>
+    </div>
+     <div class="row">
+      <div class="key">4</div>
+      <div class="key">5</div>
+      <div class="key">6</div>
+      <div class="key">+</div>
+    </div>
+     <div class="row">
+      <div class="key">1</div>
+      <div class="key">2</div>
+      <div class="key">3</div>
+      <div class="key"></div>
+    </div>
+     <div class="row">
+      <div class="key" id="p">0</div>
+      <div class="key">.</div>
+      <div class="key"></div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
